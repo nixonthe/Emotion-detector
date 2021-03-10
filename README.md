@@ -24,6 +24,6 @@ Neutral network for emotion detection.
 ## Useful links:
 Train set: https://drive.google.com/file/d/1QdhIxh1QUEuLgRb7DWa7RA7CA08ybNRJ/view?usp=sharing
 
-Test set:https://drive.google.com/file/d/1bGHeWeWYXj5biL9s-qTc9gyv91WNAbWE/view?usp=sharing
+Test set: https://drive.google.com/file/d/1bGHeWeWYXj5biL9s-qTc9gyv91WNAbWE/view?usp=sharing
 
 Kaggle competition: https://www.kaggle.com/c/skillbox-computer-vision-project
