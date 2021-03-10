@@ -43,6 +43,8 @@ def get_bb(grayscale_image, original_image, emotion, face_detector, save_image=T
     creating bounding box for image
     input:  grayscale_image - image for detector
             original_image - input image
+            emotion - predicted emotion
+            face_detector - loaded detector
 
     """
 
@@ -112,10 +114,3 @@ class Decemo:
             rgb_image = cv2.cvtColor(self.image, cv2.COLOR_BGR2RGB)
             grayscale_image = cv2.cvtColor(self.image, cv2.COLOR_BGR2GRAY)
             get_bb(grayscale_image, rgb_image, emotion, face_detector)
-
-
-# frame = capture_video()
-face_detector = load_face_detector(PATH_TO_DETECTOR)
-dec = Decemo(PATH_TO_WEIGHTS, 'image.jpg')
-emotion = dec.predict()
-dec.show_predict(emotion, face_detector)
