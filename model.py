@@ -1,8 +1,12 @@
+# import libs
 import numpy as np
 import pandas as pd
 import tensorflow as tf
 
+# download resnet50v2
 model = tf.keras.applications.ResNet50V2(include_top=False)
+
+# define number of classes
 NUM_CLASSES = 9
 
 def build_model(model, trainable=False, show_model=True):
@@ -33,4 +37,5 @@ def build_model(model, trainable=False, show_model=True):
 
     return new_model
 
+# define model for camera.py module
 resnet_model = build_model(model, True, False)
