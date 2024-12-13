@@ -1,29 +1,30 @@
 # Emotion detector
-Neutral network for emotion detection.
+The Emotion Detector project allows you to detect emotions from images you upload. It utilizes a trained model to classify emotions with high accuracy.
+
+## Features
+- **Emotion Classification**: Upload an image, and the app identifies the emotion displayed.
+- **Customizable Training**: Adjust hyperparameters to fine-tune the model for better performance.
 
 ![photo](https://user-images.githubusercontent.com/64987384/110686353-644f8800-81f0-11eb-9d14-b5da09a5296d.jpg)
 
-## Library versions:
-**Numpy:** 1.19.5
+## Installation
+1. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+2. Download the training dataset and required files:
+   - [Training Dataset](https://drive.google.com/file/d/1TG9P5B2k3eTbC4XDxDmEc07dyAORPC16/view)
+   - [Dataframe File with Targets](https://www.kaggle.com/c/skillbox-computer-vision-project/data?select=train.csv)
 
-**Pandas:** 1.1.5
+## Usage
 
-**Tensorflow:** 2.4.1
+1) **Train the Model**: Run the following command to train the model:
+   ```bash
+   python train.py
+   ```
+2) **Run the Application**: After training the model, start the application with:
+    ```bash
+    python run.py
+3) Upload an image through the app interface and see the detected emotion.
 
-**GDown:** 3.6.4
-
-**Matplotlib:** 3.2.2
-
-**Seaborn:** 0.11.1
-
-## How to launch:
-
-1) Open research.ipynb and train **only model #6** to obtain weights. Save 'em to folder with .py files.
-2) Execute camera.py. You are able to use shot by you web-cam or upload your own image w/o cam.
-
-## Useful links:
-Train set: https://drive.google.com/file/d/1QdhIxh1QUEuLgRb7DWa7RA7CA08ybNRJ/view?usp=sharing
-
-Test set: https://drive.google.com/file/d/1bGHeWeWYXj5biL9s-qTc9gyv91WNAbWE/view?usp=sharing
-
-Kaggle competition: https://www.kaggle.com/c/skillbox-computer-vision-project
+## Customization
+  - Edit `params.py` to adjust settings such as image size, batch size, model name, path to an image, etc.
